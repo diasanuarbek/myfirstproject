@@ -12,4 +12,4 @@ function getSumOfArray(array) {
 }
 
 /* function call */
-getSumOfArray([4, 5, 6, 8, 2, 4]);
+getSumOfArray([4, 5, 6, 8, 2, 9]);
