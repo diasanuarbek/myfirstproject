@@ -1,14 +1,21 @@
-'use strict';
+let money, time; 
 
-function getSumOfArray(array) {
-  let summary = 0;
+money = prompt("Ваш бюджет на месяц?");
+time = prompt("Введите дату в формате YYYY-MM-DD");
 
-  for (let item of array) {
-    summary += item;
-  }
+let appData =  {
+  "budget": money,
+  "timeData": time,
+  "expenses": {},
+  "optionalExpenses": {},
+  "income": [],
+  "savings": false
+};
 
-  return summary;
-}
+let thingsToBuy = prompt("Статья расходов в этом месяце:");
+let cost = prompt("Во сколько все это обойдется?");
 
-/* function call */
-console.log(getSumOfArray([4, 5, 6, 8, 2, 9]));
+appData.expenses.thingsToBuy = cost;
+
+alert(money / 30);
+
