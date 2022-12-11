@@ -5,11 +5,10 @@ function getSumOfArray(array) {
 
   for (let item of array) {
     summary += item;
-    console.log(summary);
   }
 
   return summary;
 }
 
 /* function call */
-getSumOfArray([4, 5, 6, 8, 2, 9]);
+console.log(getSumOfArray([4, 5, 6, 8, 2, 9]));
