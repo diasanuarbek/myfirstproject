@@ -1,4 +1,4 @@
-let money, time; 
+let money, time, thingsToBuy, cost; 
 
 money = prompt("Ваш бюджет на месяц?");
 time = prompt("Введите дату в формате YYYY-MM-DD");
@@ -12,13 +12,16 @@ let appData =  {
   "savings": false
 };
 
-let thingsToBuy = prompt("Статья расходов в этом месяце:");
-let cost = prompt("Во сколько все это обойдется?");
-let thingsToBuy2 = prompt("Статья расходов в этом месяце:");
-let cost2 = prompt("Во сколько все это обойдется?");
+for (let i = 0; i < 2; i++) {
 
-appData.expenses.thingsToBuy = cost;
-appData.expenses.thingsToBuy2 = cost2;
+  thingsToBuy = prompt("Что нужно купить?");
+  cost = promt("Сколько это стоит?");
 
+  appData.expenses[thingsToBuy] = cost;
+}
+
+
+
+console.log(appData);
 alert(money / 30);
 
