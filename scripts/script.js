@@ -14,8 +14,11 @@ let appData =  {
 
 let thingsToBuy = prompt("Статья расходов в этом месяце:");
 let cost = prompt("Во сколько все это обойдется?");
+let thingsToBuy2 = prompt("Статья расходов в этом месяце:");
+let cost2 = prompt("Во сколько все это обойдется?");
 
 appData.expenses.thingsToBuy = cost;
+appData.expenses.thingsToBuy2 = cost2;
 
 alert(money / 30);
 
